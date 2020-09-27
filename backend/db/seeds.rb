@@ -1,6 +1,6 @@
 roulette_numbers = [
     {
-        "num": "0",
+        "numeric": "0",
         "color": "green",
         "oddeven": "zero",
         "highlow": "zero",
@@ -9,7 +9,7 @@ roulette_numbers = [
         "street": 0
     },
     {
-        "num": "00",
+        "numeric": "00",
         "color": "green",
         "oddeven": "zero",
         "highlow": "zero",
@@ -18,7 +18,7 @@ roulette_numbers = [
         "street": 0
     },
     {
-        "num": "1",
+        "numeric": "1",
         "color": "red",
         "oddeven": "odd",
         "highlow": "low",
@@ -27,7 +27,7 @@ roulette_numbers = [
         "street": 1
     },
     {
-        "num": "2",
+        "numeric": "2",
         "color": "black",
         "oddeven": "even",
         "highlow": "low",
@@ -36,7 +36,7 @@ roulette_numbers = [
         "street": 1
     },
     {
-        "num": "3",
+        "numeric": "3",
         "color": "red",
         "oddeven": "odd",
         "highlow": "low",
@@ -45,7 +45,7 @@ roulette_numbers = [
         "street": 1
     },
     {
-        "num": "4",
+        "numeric": "4",
         "color": "black",
         "oddeven": "even",
         "highlow": "low",
@@ -54,7 +54,7 @@ roulette_numbers = [
         "street": 2
     },
     {
-        "num": "5",
+        "numeric": "5",
         "color": "red",
         "oddeven": "odd",
         "highlow": "low",
@@ -63,7 +63,7 @@ roulette_numbers = [
         "street": 2
     },
     {
-        "num": "6",
+        "numeric": "6",
         "color": "black",
         "oddeven": "even",
         "highlow": "low",
@@ -72,7 +72,7 @@ roulette_numbers = [
         "street": 2
     },
     {
-        "num": "7",
+        "numeric": "7",
         "color": "red",
         "oddeven": "odd",
         "highlow": "low",
@@ -81,7 +81,7 @@ roulette_numbers = [
         "street": 3
     },
     {
-        "num": "8",
+        "numeric": "8",
         "color": "black",
         "oddeven": "even",
         "highlow": "low",
@@ -90,7 +90,7 @@ roulette_numbers = [
         "street": 3
     },
     {
-        "num": "9",
+        "numeric": "9",
         "color": "red",
         "oddeven": "odd",
         "highlow": "low",
@@ -99,7 +99,7 @@ roulette_numbers = [
         "street": 3
     },
     {
-        "num": "10",
+        "numeric": "10",
         "color": "black",
         "oddeven": "even",
         "highlow": "low",
@@ -108,7 +108,7 @@ roulette_numbers = [
         "street": 4
     },
     {
-        "num": "11",
+        "numeric": "11",
         "color": "black",
         "oddeven": "odd",
         "highlow": "low",
@@ -117,7 +117,7 @@ roulette_numbers = [
         "street": 4
     },
     {
-        "num": "12",
+        "numeric": "12",
         "color": "red",
         "oddeven": "even",
         "highlow": "low",
@@ -126,7 +126,7 @@ roulette_numbers = [
         "street": 4
     },
     {
-        "num": "13",
+        "numeric": "13",
         "color": "black",
         "oddeven": "odd",
         "highlow": "low",
@@ -135,7 +135,7 @@ roulette_numbers = [
         "street": 5
     },
     {
-        "num": "14",
+        "numeric": "14",
         "color": "red",
         "oddeven": "even",
         "highlow": "low",
@@ -144,7 +144,7 @@ roulette_numbers = [
         "street": 5
     },
     {
-        "num": "15",
+        "numeric": "15",
         "color": "black",
         "oddeven": "odd",
         "highlow": "low",
@@ -153,7 +153,7 @@ roulette_numbers = [
         "street": 5
     },
     {
-        "num": "16",
+        "numeric": "16",
         "color": "red",
         "oddeven": "even",
         "highlow": "low",
@@ -162,7 +162,7 @@ roulette_numbers = [
         "street": 6
     },
     {
-        "num": "17",
+        "numeric": "17",
         "color": "black",
         "oddeven": "odd",
         "highlow": "low",
@@ -171,7 +171,7 @@ roulette_numbers = [
         "street": 6
     },
     {
-        "num": "18",
+        "numeric": "18",
         "color": "red",
         "oddeven": "even",
         "highlow": "low",
@@ -180,7 +180,7 @@ roulette_numbers = [
         "street": 6
     },
     {
-        "num": "19",
+        "numeric": "19",
         "color": "red",
         "oddeven": "odd",
         "highlow": "high",
@@ -189,7 +189,7 @@ roulette_numbers = [
         "street": 7
     },
     {
-        "num": "20",
+        "numeric": "20",
         "color": "black",
         "oddeven": "even",
         "highlow": "high",
@@ -198,7 +198,7 @@ roulette_numbers = [
         "street": 7
     },
     {
-        "num": "21",
+        "numeric": "21",
         "color": "red",
         "oddeven": "odd",
         "highlow": "high",
@@ -207,7 +207,7 @@ roulette_numbers = [
         "street": 7
     },
     {
-        "num": "22",
+        "numeric": "22",
         "color": "black",
         "oddeven": "even",
         "highlow": "high",
@@ -216,7 +216,7 @@ roulette_numbers = [
         "street": 8
     },
     {
-        "num": "23",
+        "numeric": "23",
         "color": "red",
         "oddeven": "odd",
         "highlow": "high",
@@ -225,7 +225,7 @@ roulette_numbers = [
         "street": 8
     },
     {
-        "num": "24",
+        "numeric": "24",
         "color": "black",
         "oddeven": "even",
         "highlow": "high",
@@ -234,7 +234,7 @@ roulette_numbers = [
         "street": 8
     },
     {
-        "num": "25",
+        "numeric": "25",
         "color": "red",
         "oddeven": "odd",
         "highlow": "high",
@@ -243,7 +243,7 @@ roulette_numbers = [
         "street": 9
     },
     {
-        "num": "26",
+        "numeric": "26",
         "color": "black",
         "oddeven": "even",
         "highlow": "high",
@@ -252,7 +252,7 @@ roulette_numbers = [
         "street": 9
     },
     {
-        "num": "27",
+        "numeric": "27",
         "color": "red",
         "oddeven": "odd",
         "highlow": "high",
@@ -261,7 +261,7 @@ roulette_numbers = [
         "street": 9
     },
     {
-        "num": "28",
+        "numeric": "28",
         "color": "black",
         "oddeven": "even",
         "highlow": "high",
@@ -270,7 +270,7 @@ roulette_numbers = [
         "street": 10
     },
     {
-        "num": "29",
+        "numeric": "29",
         "color": "black",
         "oddeven": "odd",
         "highlow": "high",
@@ -279,7 +279,7 @@ roulette_numbers = [
         "street": 10
     },
     {
-        "num": "30",
+        "numeric": "30",
         "color": "red",
         "oddeven": "even",
         "highlow": "high",
@@ -288,7 +288,7 @@ roulette_numbers = [
         "street": 10
     },
     {
-        "num": "31",
+        "numeric": "31",
         "color": "black",
         "oddeven": "odd",
         "highlow": "high",
@@ -297,7 +297,7 @@ roulette_numbers = [
         "street": 11
     },
     {
-        "num": "32",
+        "numeric": "32",
         "color": "red",
         "oddeven": "even",
         "highlow": "high",
@@ -306,7 +306,7 @@ roulette_numbers = [
         "street": 11
     },
     {
-        "num": "33",
+        "numeric": "33",
         "color": "black",
         "oddeven": "odd",
         "highlow": "high",
@@ -315,7 +315,7 @@ roulette_numbers = [
         "street": 11
     },
     {
-        "num": "34",
+        "numeric": "34",
         "color": "red",
         "oddeven": "even",
         "highlow": "high",
@@ -324,7 +324,7 @@ roulette_numbers = [
         "street": 12
     },
     {
-        "num": "35",
+        "numeric": "35",
         "color": "black",
         "oddeven": "odd",
         "highlow": "high",
@@ -333,7 +333,7 @@ roulette_numbers = [
         "street": 12
     },
     {
-        "num": "36",
+        "numeric": "36",
         "color": "red",
         "oddeven": "even",
         "highlow": "high",
