@@ -1,4 +1,4 @@
-[
+roulette_numbers = [
     {
         "num": "0",
         "color": "green",
@@ -342,3 +342,7 @@
         "street": 12
     }
 ]
+
+roulette_numbers.each do |number|
+    Number.create(number)
+end
