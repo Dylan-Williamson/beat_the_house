@@ -19,7 +19,7 @@
     },
     {
         "num": "1",
-        "color": "black",
+        "color": "red",
         "oddeven": "odd",
         "highlow": "low",
         "column": 1,
@@ -28,7 +28,7 @@
     },
     {
         "num": "2",
-        "color": "red",
+        "color": "black",
         "oddeven": "even",
         "highlow": "low",
         "column": 2,
@@ -37,7 +37,7 @@
     },
     {
         "num": "3",
-        "color": "black",
+        "color": "red",
         "oddeven": "odd",
         "highlow": "low",
         "column": 3,
@@ -46,299 +46,299 @@
     },
     {
         "num": "4",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 1,
+        "dozen": 1,
+        "street": 2
     },
     {
         "num": "5",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 2,
+        "dozen": 1,
+        "street": 2
     },
     {
         "num": "6",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 3,
+        "dozen": 1,
+        "street": 2
     },
     {
         "num": "7",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 1,
+        "dozen": 1,
+        "street": 3
     },
     {
         "num": "8",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 2,
+        "dozen": 1,
+        "street": 3
     },
     {
         "num": "9",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 3,
+        "dozen": 1,
+        "street": 3
     },
     {
         "num": "10",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 1,
+        "dozen": 1,
+        "street": 4
     },
     {
         "num": "11",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 2,
+        "dozen": 1,
+        "street": 4
     },
     {
         "num": "12",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 3,
+        "dozen": 1,
+        "street": 4
     },
     {
         "num": "13",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 1,
+        "dozen": 2,
+        "street": 5
     },
     {
         "num": "14",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 2,
+        "dozen": 2,
+        "street": 5
     },
     {
         "num": "15",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 3,
+        "dozen": 2,
+        "street": 5
     },
     {
         "num": "16",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 1,
+        "dozen": 2,
+        "street": 6
     },
     {
         "num": "17",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "low",
+        "column": 2,
+        "dozen": 2,
+        "street": 6
     },
     {
         "num": "18",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "low",
+        "column": 3,
+        "dozen": 2,
+        "street": 6
     },
     {
         "num": "19",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 1,
+        "dozen": 2,
+        "street": 7
     },
     {
         "num": "20",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 2,
+        "dozen": 2,
+        "street": 7
     },
     {
         "num": "21",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 3,
+        "dozen": 2,
+        "street": 7
     },
     {
         "num": "22",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 1,
+        "dozen": 2,
+        "street": 8
     },
     {
         "num": "23",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 2,
+        "dozen": 2,
+        "street": 8
     },
     {
         "num": "24",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 3,
+        "dozen": 2,
+        "street": 8
     },
     {
         "num": "25",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 1,
+        "dozen": 3,
+        "street": 9
     },
     {
         "num": "26",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 2,
+        "dozen": 3,
+        "street": 9
     },
     {
         "num": "27",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 3,
+        "dozen": 3,
+        "street": 9
     },
     {
         "num": "28",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 1,
+        "dozen": 3,
+        "street": 10
     },
     {
         "num": "29",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 2,
+        "dozen": 3,
+        "street": 10
     },
     {
         "num": "30",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 3,
+        "dozen": 3,
+        "street": 10
     },
     {
         "num": "31",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 1,
+        "dozen": 3,
+        "street": 11
     },
     {
         "num": "32",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 2,
+        "dozen": 3,
+        "street": 11
     },
     {
         "num": "33",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 3,
+        "dozen": 3,
+        "street": 11
     },
     {
         "num": "34",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 1,
+        "dozen": 3,
+        "street": 12
     },
     {
         "num": "35",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "black",
+        "oddeven": "odd",
+        "highlow": "high",
+        "column": 2,
+        "dozen": 3,
+        "street": 12
     },
     {
         "num": "36",
-        "color": 
-        "oddeven": 
-        "highlow": 
-        "column": 
-        "dozen": 
-        "street": 
+        "color": "red",
+        "oddeven": "even",
+        "highlow": "high",
+        "column": 3, 
+        "dozen": 3,
+        "street": 12
     }
 ]
