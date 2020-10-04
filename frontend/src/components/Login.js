@@ -18,8 +18,6 @@ class Login {
     e.preventDefault()
     api.postUser(e.target.username.value).then(user => {
       state.user = user
-      https://github.com/Dylan-Williamson/document-structure-lab-onl01-seng-pt-030220.git
-      
     })
   }
 }
