@@ -1,9 +1,8 @@
 class Strategy {
-    constructor(name, min_balance, starting_bet) {
+    constructor(id, name, minBalance, startingBet) {
+        this.id = id;
         this.name = name;
-        this.minBalance = min_balance;
-        this.startingBet = starting_bet;
+        this.min_balance = minBalance;
+        this.starting_bet = startingBet
     }
-
-    // method to render object to the DOM
 }
