@@ -5,10 +5,8 @@ class UsersController < ApplicationController
     end
 
     def create
-        if User.find_by(username: params[:username]) == nil
-            user = User.create(username: params[:username], balance: 1000)
-        else
-            user = User.find_by(username: params[:username])
+        user = User.find_or_create_by(username: params[:username]) do |user|
+            user.balance = 1000
         end
         render json: user, except: [:created_at, :updated_at]
     end
