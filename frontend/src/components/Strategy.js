@@ -5,4 +5,9 @@ class Strategy {
         this.min_balance = minBalance;
         this.starting_bet = startingBet
     }
+
+    renderStrategy() {
+        document.body.innerHTML = ""
+        const div = document.createElement("div")   
+      }
 }

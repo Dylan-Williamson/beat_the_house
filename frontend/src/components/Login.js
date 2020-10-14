@@ -5,7 +5,7 @@ class Login {
     render(){
         document.body.innerHTML = ""
         const h1 = document.createElement("h1")
-        h1.innerText = "Select an alias."
+        h1.innerText = "Enter your alias"
         const form = document.createElement("form")
         const input = document.createElement("input")
         input.name = "username"

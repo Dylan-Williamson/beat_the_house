@@ -4,9 +4,9 @@ class ApiService {
       this.root = root
     }
   
-    // getFacilities = () => fetch(this.root+"/facilities").then(res => res.json())
+    getStrategies = () => fetch(this.root+"/strategies").then(res => res.json())
   
-    // getFacility = (id) => fetch(this.root+"/facilities/" + id).then(res => res.json())
+    getStrategy = (id) => fetch(this.root+"/strategies/" + id).then(res => res.json())
   
     postUser = (username, balance) => {
       return fetch(this.root + "/users", {
