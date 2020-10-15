@@ -9,12 +9,19 @@ const baseUrl = "http://localhost:3000"
 const state = {
   user: { }
 }
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 new Login()
+
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM IS LOADED");
   // fetchStrategies()
 })
+
 
 // Fetch 1 [READ]
 // document.addEventListener("click", )

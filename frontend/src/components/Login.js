@@ -19,12 +19,25 @@ class Login {
     api.postUser(e.target.username.value).then(user => {
       state.user = user
       document.body.innerHTML = `
-      <nav class="btn-group" style="width:100%">
-        <button id="logo-btn" type="button" style="width:33.3%">Games</button>
-        <button id="balance-btn" type="button" style="width:33.4%">$${state.user.balance}</button>
-        <button type="button" style="width:33.3%">${state.user.username}</button>
-      </nav>
+      <header>
+        <ul>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Strategies</a></li>
+          <li><a href="#">Simulators</a></li>
+        </ul>
+        <a href="#" class="logo">BEAT THE HOUSE</a>
+        <ul>
+          <li><a href="#">$${state.user.balance}</a></li>
+          <li><a href="#">${state.user.username}</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </header>
+      <section class="banner"></section>
       `
+      window.addEventListener("scroll", function(){
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+      })
     })
   }
 }
