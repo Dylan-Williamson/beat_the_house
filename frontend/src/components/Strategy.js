@@ -7,7 +7,7 @@ class Strategy {
     }
 
     renderStrategy() {
-        document.body.innerHTML = ""
-        const div = document.createElement("div")   
+        const div = document.createElement("div")
+        // debugger
       }
 }

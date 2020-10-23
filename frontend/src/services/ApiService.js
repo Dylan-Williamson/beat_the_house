@@ -5,9 +5,25 @@ class ApiService {
     }
   
     getStrategies = () => fetch(this.root+"/strategies").then(res => res.json())
-  
+
     getStrategy = (id) => fetch(this.root+"/strategies/" + id).then(res => res.json())
-  
+    
+    getGames = () => fetch(this.root+"/games").then(res => res.json())
+
+    // getGames() {
+    //   fetch(`${this.root}/games`)
+    //   .then(resp => resp.json())
+    //   .then(games => {
+    //     for (const game of games.data){
+    //       let g = new Game(game.id, game.attributes.name);
+    //       // debugger
+    //       g.renderGame();
+    //     }
+    //   })
+    // }
+
+    getGame = (id) => fetch(this.root+"/games/" + id).then(res => res.json())
+
     postUser = (username, balance) => {
       return fetch(this.root + "/users", {
         method: 'POST', // or 'PUT'
