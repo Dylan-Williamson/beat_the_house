@@ -57,7 +57,8 @@ class GameContainer {
 
       // Renders game cards
       games.data.forEach(game => {
-        let g = new Game(game.id, game.attributes.name);
+        let g = new Game(game.id, game.attributes.name, game.attributes.img);
+        // debugger
         g.renderGame();
       })
     }
