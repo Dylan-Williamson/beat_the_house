@@ -7,6 +7,7 @@ class Game {
 
     renderGame(){
         const gameLi = document.createElement("li");
+        gameLi.classList.add("game-card")
         const gameList = document.getElementsByClassName("game-list")[0];
         gameLi.innerHTML = `
         <div class="card">

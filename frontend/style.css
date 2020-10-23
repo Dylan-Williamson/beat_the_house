@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 body {
@@ -110,11 +111,15 @@ header.sticky ul li a:hover {
   }
   
   .container {
-      background: black;
-      color: rgb(221, 42, 132);
-      padding: 2px 16px;
+    background: black;
+    color: rgb(221, 42, 132);
+    padding: 2px 16px;
   }
 
+  li.game-card {
+      display: flex;
+      justify-content: center;
+  }
   img {
       opacity: 0.5;
   }

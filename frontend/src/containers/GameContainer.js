@@ -45,7 +45,7 @@ class GameContainer {
       gamesContainer.classList.add("game-container");
       gameList.classList.add("game-list")
       gamesHeader.innerHTML = `
-      <h3>All Games</h3>
+      <h3>All Games</h3><br>
       `;
       
       
