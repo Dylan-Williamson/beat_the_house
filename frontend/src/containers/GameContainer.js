@@ -13,15 +13,15 @@ class GameContainer {
         const nav = `
         <header class="nav">
             <ul>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Strategies</a></li>
-                <li><a href="#">Simulators</a></li>
+                <li><a href="#" class="games-nav">Games</a></li>
+                <li><a href="#" class="strategies-nav">Strategies</a></li>
+                <li><a href="#" class="simulators-nav">Simulators</a></li>
             </ul>
             <a href="#" class="logo">BEAT THE HOUSE</a>
             <ul>
-                <li><a href="#">$${state.user.balance}</a></li>
-                <li><a href="#">${state.user.username}</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#" class="balance-nav">$${state.user.balance}</a></li>
+                <li><a href="#" class="username-nav">${state.user.username}</a></li>
+                <li><a href="#" class="about-nav">About</a></li>
             </ul>
         </header>
         <section class="banner"></section>
@@ -30,8 +30,12 @@ class GameContainer {
       const gamesHeader = document.createElement("div");
       const gamesContainer = document.createElement("div");
       const gameList = document.createElement("ul");
-        
-        
+      const strategiesNav = document.getElementsByClassName("strategies-nav")
+      const gamesNav = document.getElementsByClassName("games-nav")
+      const balanceNav = document.getElementsByClassName("balance-nav")
+      const usernameNav = document.getElementsByClassName("username-nav")
+
+
       // Removes login elements from DOM
       welcome.parentNode.removeChild(welcome);
       form.parentNode.removeChild(form);
@@ -54,12 +58,18 @@ class GameContainer {
       gamesContainer.append(gameList);
       body.append(gamesHeader, gamesContainer);
 
-
+      
       // Renders game cards
       games.data.forEach(game => {
         let g = new Game(game.id, game.attributes.name, game.attributes.img);
-        // debugger
         g.renderGame();
       })
+
+      usernameNav[0].addEventListener("click", function() {
+        gamesHeader.childNodes[1].innerHTML = "Your Strategies";
+        gameList.innerHTML = "";
+        new StrategyContainer();
+      });
+
     }
   }

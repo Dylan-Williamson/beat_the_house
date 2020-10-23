@@ -7,6 +7,8 @@ class ApiService {
     getStrategies = () => fetch(this.root+"/strategies").then(res => res.json())
 
     getStrategy = (id) => fetch(this.root+"/strategies/" + id).then(res => res.json())
+
+    getUserStrategies = (id) => fetch(this.root+"/users/"+id+"/strategies/").then(res => res.json())
     
     getGames = () => fetch(this.root+"/games").then(res => res.json())
 
