@@ -89,41 +89,62 @@ header.sticky ul li a:hover {
     color: whitesmoke;
 }
 
-
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
+    position: relative;
+    width: 50%;
   }
   
-  h3 {
-      text-align: center;
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
   
-  .card h4 {
-      text-align: center;
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(221, 42, 132);;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
   }
   
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    cursor: -webkit-grab; cursor: grab;
-    color: white;
+  .card:hover .overlay {
+    bottom: 0;
+    height: 100%;
   }
   
-  .container {
-    background: black;
-    color: rgb(221, 42, 132);
-    padding: 2px 16px;
+  .text {
+    white-space: nowrap; 
+    color: black;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
 
   li.game-card {
       display: flex;
       justify-content: center;
   }
+
   img {
-      opacity: 0.5;
+      opacity: 1.0;
   }
 
   img:hover {
-      opacity: 1.0;
+      opacity: 0.5;
   }
+
+  div.card:hover
+  {
+      cursor: grab;
+  } 

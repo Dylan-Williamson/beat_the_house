@@ -11,11 +11,11 @@ class Game {
         const gameList = document.getElementsByClassName("game-list")[0];
         gameLi.innerHTML = `
         <div class="card">
-  		    <img src=${this.img} alt="Image" style="width:100%">
-  	    <div class="container">
-            <h4><b>${this.name}</b></h4>
-  	    </div>
-	    </div>
+            <img src=${this.img} alt="IMAGE" class="image">
+            <div class="overlay">
+                <div class="text">${this.name}</div>
+            </div>
+        </div>
         `;
         gameList.append(gameLi)
     }
