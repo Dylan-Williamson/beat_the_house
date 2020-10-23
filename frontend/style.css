@@ -12,6 +12,10 @@ body {
     color: rgb(221, 42, 132);
 }
 
+h3 {
+    font-size: 34px;
+}
+
 header {
     position: fixed;
     top: 0;
