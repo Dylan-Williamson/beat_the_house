@@ -1,9 +1,10 @@
 class Strategy {
-    constructor(id, name, minBalance, startingBet) {
+    constructor(id, name, minBalance, startingBet, description) {
         this.id = id;
         this.name = name;
         this.min_balance = minBalance;
-        this.starting_bet = startingBet
+        this.starting_bet = startingBet;
+        this.description = description
     }
 
     renderStrategy() {
