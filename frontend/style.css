@@ -114,3 +114,11 @@ header.sticky ul li a:hover {
       color: rgb(221, 42, 132);
       padding: 2px 16px;
   }
+
+  img {
+      opacity: 0.5;
+  }
+
+  img:hover {
+      opacity: 1.0;
+  }
