@@ -2,14 +2,12 @@ class GameContainer {
     constructor(){
         api.getGames().then(this.render)
     }
-
-
+    
+    
     render(games) {
-
+      
       // Assigns DOM elements to variables
         const body = document.body;
-        let welcome = document.querySelector("h1");
-        let form = document.querySelector("form");
         const nav = `
         <header class="nav">
             <ul>
@@ -34,17 +32,14 @@ class GameContainer {
       const gamesNav = document.getElementsByClassName("games-nav")
       const balanceNav = document.getElementsByClassName("balance-nav")
       const usernameNav = document.getElementsByClassName("username-nav")
-
-
-      // Removes login elements from DOM
-      welcome.parentNode.removeChild(welcome);
-      form.parentNode.removeChild(form);
+      const logoNav = document.getElementsByClassName("logo")
+    
       
-      
-      // Assignment
       window.addEventListener("scroll", function(){
         header[0].classList.toggle("sticky", window.scrollY > 0)
       });
+      
+      // Assignment
       gamesHeader.classList.add("games-header");
       gamesContainer.classList.add("game-container");
       gameList.classList.add("game-list")
@@ -54,6 +49,7 @@ class GameContainer {
       
       
       // Appends elements to DOM
+      body.innerHTML = ""
       body.innerHTML += nav;
       gamesContainer.append(gameList);
       body.append(gamesHeader, gamesContainer);
@@ -69,6 +65,10 @@ class GameContainer {
         gamesHeader.childNodes[1].innerHTML = "Your Strategies";
         gameList.innerHTML = "";
         new StrategyContainer();
+      });
+
+      logoNav[0].addEventListener("click", function() {
+        new GameContainer();
       });
 
     }
