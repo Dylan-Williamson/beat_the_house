@@ -1,6 +1,6 @@
-class StrategyContainer {
+class UserStrategyContainer {
     constructor(){
-        api.getStrategies().then(this.render)
+        api.getUserStrategies(state.user.id).then(this.render)
     }
 
 
