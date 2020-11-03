@@ -10,4 +10,10 @@ class UsersController < ApplicationController
         end
         render json: user, except: [:created_at, :updated_at]
     end
+
+    def update
+        @user = User.find(params[:id])
+        @user.update(params.permit(:balance))
+        render json: @user
+    end
 end

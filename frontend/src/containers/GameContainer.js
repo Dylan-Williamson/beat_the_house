@@ -30,7 +30,6 @@ class GameContainer {
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
       </div>
 
       </div>
@@ -47,7 +46,8 @@ class GameContainer {
       const balanceNav = document.getElementsByClassName("balance-nav");
       const usernameNav = document.getElementsByClassName("username-nav");
       const aboutNav = document.getElementsByClassName("about-nav");
-      
+      const balanceForm = document.createElement("form");
+
       window.addEventListener("scroll", function(){
         header[0].classList.toggle("sticky", window.scrollY > 0)
       });
@@ -73,6 +73,11 @@ class GameContainer {
       function clearPage(title) {
         gamesHeader.childNodes[1].innerHTML = title;
         gameList.innerHTML = "";
+      }
+
+      function clearModal() {
+        modal.style.display = "none";
+        modal.querySelector("form").remove
       }
       
       // Renders game cards
@@ -106,6 +111,15 @@ class GameContainer {
       });
 
       balanceNav[0].addEventListener("click", function() {
+        const modalContent = document.querySelector(".modal-content");
+        const balanceString = document.getElementsByClassName("balance-nav")[0].innerText.slice(1)
+        const balanceFloat = parseFloat(balanceString)
+        balanceForm.innerHTML = `
+        <label for="balance">Balance:</label>
+        <input type="number" required name="balance" min="0" value=${balanceFloat} step=".01">
+        <input type="submit" value="Update Balance">
+        `
+        modalContent.appendChild(balanceForm)
         modal.style.display = "block";
       });
 
@@ -124,9 +138,17 @@ class GameContainer {
 
       window.addEventListener("click", function(event) {
           if (event.target == modal) {
-           modal.style.display = "none";
+            clearModal();
           }
       })
+      
+      balanceForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const balance = parseFloat(e.target.balance.value);
+        api.updateUserBalance(state.user.id, balance);
+        document.getElementsByClassName("balance-nav")[0].innerText = `$${balance}`
+        clearModal();
+      });
 
     }
   }

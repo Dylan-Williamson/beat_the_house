@@ -15,7 +15,7 @@ class ApiService {
     getGame = (id) => fetch(this.root+"/games/" + id).then(res => res.json())
     
     getGames = () => fetch(this.root+"/games").then(res => res.json())
-    
+
     // User FETCH's
     postUser = (username, balance) => {
       return fetch(this.root + "/users", {
@@ -28,6 +28,17 @@ class ApiService {
       )
       .then(res => res.json())
     }
+
+    updateUserBalance = (id, balance) => {
+      return fetch(this.root + "/users/" + id, {
+        method: 'PATCH', 
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({balance: balance}),
+      })
+      .then(res => res.json())
+    } 
   
   
   }
