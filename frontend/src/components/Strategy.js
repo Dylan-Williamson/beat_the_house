@@ -7,13 +7,12 @@ class Strategy {
         this.description = description
     }
 
-    renderStrategy(){
-        const strategyLi = document.createElement("li");
-        strategyLi.classList.add("strategy-card")
-        const strategyList = document.getElementsByClassName("strategy-list")[0];
-        strategyLi.innerHTML = `
-        <a href="#">${this.name}</a>
-        `;
-        strategyList.append(gameLi)
+    render(){
+        const strategyList = document.getElementsByClassName("game-list")[0];
+        const strategyLink = document.createElement("li");
+        strategyLink.innerHTML = `
+        <a class="strategy-link" href="#">${this.name}</a><br>
+        `
+        strategyList.append(strategyLink)
     }
 }

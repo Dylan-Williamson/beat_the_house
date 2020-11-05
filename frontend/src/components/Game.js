@@ -5,7 +5,7 @@ class Game {
         this.img = img;
     }
 
-    renderGame(){
+    render(){
         const gameLi = document.createElement("li");
         gameLi.classList.add("game-card")
         const gameList = document.getElementsByClassName("game-list")[0];

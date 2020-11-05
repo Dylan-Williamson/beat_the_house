@@ -5,16 +5,9 @@ class UserStrategyContainer {
 
 
     render(strategies) {
-        
-        
         strategies.data.forEach(strategy => {
-            const strategyList = document.getElementsByClassName("game-list")[0];
-            const strategyLink = document.createElement("li");
-            strategyLink.innerHTML = `
-            <a href="#">${strategy.attributes.name}</a>
-            `
-            strategyList.append(strategyLink)
+            let s = new Strategy(strategy.id, strategy.attributes.name, strategy.attributes.img);
+            s.render()
         })
-
     }
   }
