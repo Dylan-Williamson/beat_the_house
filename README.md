@@ -1,24 +1,29 @@
-# README
+# Beat The House
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Beat The House is a platform where users can build/test strategies for casino table games.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Use the package manager npm to install dependencies
 
-* System dependencies
+```bash
+npm install
+```
 
-* Configuration
+## Usage
 
-* Database creation
+```bash
+#/beat_the_house/backend
+rails s
 
-* Database initialization
+#/beat_the_house/frontend
+open index.html
+```
 
-* How to run the test suite
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Deployment instructions
+Please make sure to update tests as appropriate.
 
-* Random Goodness
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
