@@ -47,6 +47,8 @@ class GameContainer {
       const usernameNav = document.getElementsByClassName("username-nav");
       const aboutNav = document.getElementsByClassName("about-nav");
       const balanceForm = document.createElement("form");
+      const strategyForm = document.createElement("form");
+      const formHeader = document.createElement("h3");
 
       window.addEventListener("scroll", function(){
         header[0].classList.toggle("sticky", window.scrollY > 0)
@@ -129,6 +131,21 @@ class GameContainer {
 
       usernameNav[0].addEventListener("click", function() {
         clearPage("Your Strategies");
+        formHeader.innerText = `
+        Create New Strategy
+        `
+        strategyForm.innerHTML = `
+        <label for="name">Name:</label><br>
+        <input type="text" required name="name"><br><br>
+        <label for="minBalance">Minimum Balance:</label><br>
+        <input type="number" required name="minBalance" min="0" step=".01"><br><br>
+        <label for="startingBet">Starting Wager:</label><br>
+        <input type="number" required name="startingBet" min="0" step=".01"><br><br>
+        <label for="description">Instructions:</label><br>
+        <textarea name="description"></textarea><br><br>
+        <input type="submit" value="Save Strategy"><br>
+        `
+        gamesHeader.prepend(formHeader, strategyForm)
         new UserStrategyContainer();
       });
 
@@ -150,5 +167,14 @@ class GameContainer {
         clearModal();
       });
 
+      strategyForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const userId = state.user.id
+        const name = e.target.name.value;
+        const minBalance = parseFloat(e.target.minBalance.value);
+        const startingBet = e.target.startingBet.value;
+        const description = e.target.description.value;
+        api.postStrategy(name, minBalance, startingBet, description, userId);
+      });
     }
   }

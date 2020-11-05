@@ -5,9 +5,12 @@ class UserStrategyContainer {
 
 
     render(strategies) {
+        const modalContent = document.getElementsByClassName("modal-content")[0];
         strategies.data.forEach(strategy => {
             let s = new Strategy(strategy.id, strategy.attributes.name, strategy.attributes.img);
             s.render()
         })
+
+
     }
   }

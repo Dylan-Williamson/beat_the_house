@@ -39,6 +39,19 @@ class ApiService {
       })
       .then(res => res.json())
     } 
+
+    postStrategy = (name, minBalance, startingBet, description, userId) => {
+      // debugger
+      return fetch(this.root + "/users/" + userId + "/strategies/", {
+        method: 'POST', // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({name: name}, {minBalance: minBalance}, {startingBet: startingBet}, {description: description}),
+        }
+      )
+      .then(res => res.json())
+    }
   
   
   }

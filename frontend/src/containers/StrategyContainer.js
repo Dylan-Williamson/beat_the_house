@@ -6,7 +6,7 @@ class StrategyContainer {
 
     render(strategies) {
         strategies.data.forEach(strategy => {
-            let s = new Strategy(strategy.id, strategy.attributes.name, strategy.attributes.img);
+            let s = new Strategy(strategy.id, strategy.attributes.name, strategy.attributes.min_balance, strategy.attributes.starting_bet, strategy.attributes.description);
             s.render()
         })
     }
