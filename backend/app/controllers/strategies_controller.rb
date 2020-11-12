@@ -5,12 +5,17 @@ class StrategiesController < ApplicationController
     end
 
     def create
-        strategy = Strategy.create(name: params[:name], min_balance: params[:min_balance], starting_bet: params[:starting_bet], description: params[:description], user_id: params[:user_id])
+        # byebug
+        strategy = Strategy.create(strategy_params)
         render json: strategy, except: [:created_at, :updated_at]
     end
 
     def show
         strategy = Strategy.find(params[:id])
         render json: StrategySerializer.new(strategy)
+    end
+
+    def strategy_params
+        params.require(:strategy).permit(:name, :min_balance, :starting_bet, :description, :user_id, :game_id)
     end
 end

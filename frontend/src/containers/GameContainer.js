@@ -143,6 +143,8 @@ class GameContainer {
         <input type="number" required name="startingBet" min="0" step=".01"><br><br>
         <label for="description">Instructions:</label><br>
         <textarea name="description"></textarea><br><br>
+        <label for="gameId">Game Id:</label><br>
+        <input type="number" required name="gameId" min="1" max="4" step="1"><br><br>
         <input type="submit" value="Save Strategy"><br>
         `
         gamesHeader.prepend(formHeader, strategyForm)
@@ -169,12 +171,14 @@ class GameContainer {
 
       strategyForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const userId = state.user.id
         const name = e.target.name.value;
         const minBalance = parseFloat(e.target.minBalance.value);
-        const startingBet = e.target.startingBet.value;
+        const startingBet = parseFloat(e.target.startingBet.value);
         const description = e.target.description.value;
-        api.postStrategy(name, minBalance, startingBet, description, userId);
+        const userId = state.user.id
+        const gameId = e.target.gameId.value;
+        api.postStrategy(name, minBalance, startingBet, description, userId, gameId);
+        strategyForm.reset()
       });
     }
   }
