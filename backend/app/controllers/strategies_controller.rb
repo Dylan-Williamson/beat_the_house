@@ -1,11 +1,14 @@
 class StrategiesController < ApplicationController
     def index
-        strategies = Strategy.all
+        if params[:user_id] == nil
+            strategies = Strategy.all
+        else
+            strategies = Strategy.where(user_id: params[:user_id])
+        end
         render json: StrategySerializer.new(strategies)
     end
 
     def create
-        # byebug
         strategy = Strategy.create(strategy_params)
         render json: strategy, except: [:created_at, :updated_at]
     end

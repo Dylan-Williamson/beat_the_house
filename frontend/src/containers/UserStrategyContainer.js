@@ -1,5 +1,6 @@
 class UserStrategyContainer {
     constructor(){
+        // debugger
         api.getUserStrategies(state.user.id).then(this.render)
     }
 
