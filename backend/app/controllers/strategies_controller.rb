@@ -18,6 +18,12 @@ class StrategiesController < ApplicationController
         render json: StrategySerializer.new(strategy)
     end
 
+    def update
+        strategy = Strategy.find(params[:id])
+        strategy.update(strategy_params)
+        render json: strategy
+    end
+
     def destroy
         strategy = Strategy.find(params[:id])
         strategy.destroy

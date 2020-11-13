@@ -134,6 +134,7 @@ class GameContainer {
 
       span.addEventListener("click", function() {
         modal.style.display = "none";
+        modal.querySelector("form").remove()
       });
 
       usernameNav[0].addEventListener("click", function() {
@@ -165,6 +166,7 @@ class GameContainer {
       window.addEventListener("click", function(event) {
           if (event.target == modal) {
             clearModal();
+            modal.querySelector("form").remove()
           }
       })
       

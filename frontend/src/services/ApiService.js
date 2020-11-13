@@ -48,6 +48,18 @@ class ApiService {
     }
 
 
+    patchStrategy = (data, userId, id) => {
+      return fetch(this.root + "/users/" + userId + "/strategies/" + id, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(res => res.json())
+      .then(console.log)
+    }
+
     postStrategy = (name, minBalance, startingBet, description, userId, gameId) => {
       // debugger
       return fetch(this.root + "/users/" + userId + "/strategies/", {
