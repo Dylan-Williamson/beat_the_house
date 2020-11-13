@@ -135,6 +135,20 @@ header.sticky ul li a:hover {
     -ms-transform: translate(-50%, -50%);
   }
 
+  .strategy-text {
+    white-space: nowrap; 
+    color: black;
+    font-size: 16px;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
   li.game-card {
       display: flex;
       justify-content: center;

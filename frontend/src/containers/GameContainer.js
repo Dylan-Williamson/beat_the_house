@@ -73,6 +73,11 @@ class GameContainer {
 
       // Repeated Functions
       function clearPage(title) {
+        // if (condition) {
+        //   //  block of code to be executed if the condition is true
+        // } else {
+        //   //  block of code to be executed if the condition is false
+        // }
         gamesHeader.childNodes[1].innerHTML = title;
         gameList.innerHTML = "";
       }
@@ -100,6 +105,8 @@ class GameContainer {
       });
       
       strategiesNav[0].addEventListener("click", function() {
+        // const heads = document.getElementsByTagName("h3");
+        // gamesHeader.removeChild(heads[0]);
         clearPage("Strategies");
         new StrategyContainer();
       });

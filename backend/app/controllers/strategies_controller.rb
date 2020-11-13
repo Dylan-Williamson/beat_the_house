@@ -18,6 +18,11 @@ class StrategiesController < ApplicationController
         render json: StrategySerializer.new(strategy)
     end
 
+    def destroy
+        strategy = Strategy.find(params[:id])
+        strategy.destroy
+    end
+
     def strategy_params
         params.require(:strategy).permit(:name, :min_balance, :starting_bet, :description, :user_id, :game_id)
     end

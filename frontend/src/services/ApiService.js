@@ -40,6 +40,14 @@ class ApiService {
       .then(res => res.json())
     } 
 
+    deleteStrategy = (userId, id) => {
+      return fetch(this.root + "/users/" + userId + "/strategies/" + id, {
+        method: 'DELETE'
+      })
+      .then(res => res.json());
+    }
+
+
     postStrategy = (name, minBalance, startingBet, description, userId, gameId) => {
       // debugger
       return fetch(this.root + "/users/" + userId + "/strategies/", {
