@@ -22,13 +22,30 @@ class Strategy {
         strategyLi.innerHTML = `
         <div class="card">
             <img src="https://cdn9.dissolve.com/p/D1869_9_038/D1869_9_038_0004_600.jpg" alt="IMAGE" class="image">
-            <div>${this.name}</div>
+            <div>${this.name} | min: ${this.minBalance} | start: ${this.startingBet}</div>
             <div class="overlay" data-id="${this.id}">
                 <div class="strategy-text">${this.description}</div>
             </div>
         </div>
         `
         strategyList.append(strategyLi)
+
+        function updateCard(data, id) {
+            const name = data.name;
+            const minBalance = data.min_balance;
+            const startingBet = data.starting_bet;
+            const description = data.description;   
+            const oldCard = document.querySelectorAll(`[data-id="${id}"]`)[0];
+            const overlay = oldCard.getElementsByClassName("overlay")[0];
+            const cardInfo = oldCard.getElementsByClassName("card")[0].children[1];
+            const cardDescription = overlay.getElementsByClassName("strategy-text")[0];
+            cardInfo.innerText = `
+            ${name} | min: ${minBalance} | start: ${startingBet}
+            `
+            cardDescription.innerText = `
+            ${description}
+            `
+        };
         
         if (parseInt(this.userId) === state.user.id) {
             const strategyCards = document.getElementsByClassName("overlay");
@@ -38,9 +55,8 @@ class Strategy {
             editBtn.dataset.id = this.id
             const strategy = this
             const form = document.createElement("form");
-            // debugger
+            const modal = document.getElementById("myModal");
             editBtn.addEventListener("click", function() {
-                const modal = document.getElementById("myModal");
                 const modalContent = document.querySelector(".modal-content");
                 form.innerHTML = `
                 <label for="name">Name:</label><br>
@@ -76,18 +92,9 @@ class Strategy {
                     game_id: e.target.gameId.value
                 }
                 api.patchStrategy(data, state.user.id, strategy.id)
+                modal.style.display = "none";
+                updateCard(data, strategy.id);
             });
         }
     }
 }
-// const modalContent = document.querySelector(".modal-content");
-// const balanceString = document.getElementsByClassName("balance-nav")[0].innerText.slice(1)
-// const balanceFloat = parseFloat(balanceString)
-// balanceForm.innerHTML = `
-// <label for="balance">Balance:</label>
-// <input type="number" required name="balance" min="0" value=${balanceFloat} step=".01">
-// <input type="submit" value="Update Balance">
-// `
-// modalContent.appendChild(form)
-// modal.style.display = "block";
-// debugger

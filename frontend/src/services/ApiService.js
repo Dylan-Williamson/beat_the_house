@@ -44,7 +44,6 @@ class ApiService {
       return fetch(this.root + "/users/" + userId + "/strategies/" + id, {
         method: 'DELETE',
       })
-      // .then(res => res.json());
     }
 
 
@@ -57,9 +56,6 @@ class ApiService {
         body: JSON.stringify(data),
       })
       .then(res => res.json())
-      // .then(updatedStrategy => function() {
-      //   debugger
-      // })
     }
 
     postStrategy = (name, minBalance, startingBet, description, userId, gameId) => {
