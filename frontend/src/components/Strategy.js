@@ -13,6 +13,7 @@ class Strategy {
         const strategyLi = document.createElement("li");
         const strategyList = document.getElementsByClassName("game-list")[0];
         strategyLi.classList.add("game-card");
+        strategyLi.dataset.id = this.id
         const editBtn = document.createElement("button");
         editBtn.type = "button";
         const deleteBtn = document.createElement("button");
@@ -61,6 +62,8 @@ class Strategy {
             deleteBtn.dataset.id = this.id
             deleteBtn.addEventListener("click", function() {
                 api.deleteStrategy(state.user.id, deleteBtn.dataset.id);
+                this.parentElement.parentElement.parentElement.remove();
+                
             });
 
             form.addEventListener("submit", (e) => {
